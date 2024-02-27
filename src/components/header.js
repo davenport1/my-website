@@ -17,7 +17,7 @@ const Header = () => {
     return (
         <header>
             {/* Step 3: Use the data in your component */}
-            <h1>{data.siteMetadata.title}</h1>
+            <h1>{data.site.siteMetadata.title}</h1>
         </header>
     )
 }

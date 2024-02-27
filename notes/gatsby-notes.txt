@@ -1,0 +1,23 @@
+
+Key takeaways
+
+React is a library that helps you break down your UI into smaller pieces called components. A component is a function that returns a React element. React elements can be written in JSX.
+Page components contain all the UI elements for a specific page of your site. Gatsby automatically creates pages for components that are the default exports of files in the src/pages directory. The name of the file will be used as the route for the page.
+You can use the Gatsby Head API by exporting a named function Head to define metadata for the page.
+Building-block components are smaller reusable parts of your UI. They can be imported into page components or other building block components.
+You can import pre-built components (like Link) from other packages, or you can write your own custom components from scratch (like Layout).
+You can use props to change how a component renders. You can define your own props when you build a component. React also has some built-in props, like children and className.
+Gatsby isn’t opinionated about what styling approach you want to use, but it works with CSS Modules by default.
+
+A plugin is a package that lets you add new features to your site.
+Using plugins saves you development time, since it’s faster to install and configure a plugin than it is to recreate the same functionality from scratch.
+The general process for using a plugin is to install it, configure it in your gatsby-config.js file, and then use it in your site as needed.
+You can use the Gatsby Plugin Library to browse all the available plugins and learn more about how each one works.
+
+Key Gatsby Concept: General process for using data in your site
+Add a source plugin to add data into the GraphQL data layer.
+Use GraphiQL to design a query that responds with the data you want from the data layer.
+Add the query into your component.
+Use page queries for page components.
+Use useStaticQuery for “building block” components.
+Use the data from the response in your component.

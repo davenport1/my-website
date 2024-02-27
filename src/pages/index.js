@@ -1,15 +1,15 @@
-// Step 1: Import React
 import * as React from 'react'
 import {Link} from 'gatsby';
-import Layout from '../components/layout'
+import Layout from '../components/layout';
 import {StaticImage} from "gatsby-plugin-image";
+import Seo from '../components/seo';
 
-// Step 2: Define your component
+// Home page for the site
 const IndexPage = () => {
   return (
       <Layout pageTitle={"Home Page"}>
         <h1>Matthew Davenport</h1>
-          <StaticImage src="../images/south-sister-profile-pic.jpg"
+          <StaticImage src="../images/south-sister.png"
                        alt="Matthew after descending the dead clark glacier on South Sister"/>
           <Link to={'/about'}>About Me</Link>
         <p>
@@ -21,8 +21,6 @@ const IndexPage = () => {
   )
 }
 
-// You'll learn about this in the next task, just copy it for now
-export const Head = () => <title>Matthew Davenport</title>
+export const Head = () => <Seo title={"Home Page"}/>
 
-// Step 3: Export your component
 export default IndexPage
