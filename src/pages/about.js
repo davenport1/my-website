@@ -1,8 +1,9 @@
 import * as React from 'react';
+import Layout from "../components/layout";
 
 const About = () => {
     return (
-        <main>
+        <Layout pageTitle={"About"}>
             <h1>About Me</h1>
             <p>
                 Hello web surfer. I'm Matt and welcome to my site! By trade I am a (primarily) backend
@@ -11,7 +12,7 @@ const About = () => {
                 or earning my turns on one of the many accessible peaks in Central Oregon. Browse around to find out more
                 about either my professional aspirations, or personal hobby pursuits!
             </p>
-        </main>
+        </Layout>
     )
 }
 
