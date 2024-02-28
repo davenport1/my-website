@@ -7,6 +7,10 @@ module.exports = {
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
+    "gatsby-plugin-mdx",
+    "gatsby-remark-prismjs",
+    "gatsby-remark-images",
+    "gatsby-remark-autolink-headers",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     {
