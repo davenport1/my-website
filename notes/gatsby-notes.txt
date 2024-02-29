@@ -27,3 +27,6 @@ File System Routes only work on files in the src/pages directory (or subdirector
 To create a new collection route, you name your file {nodeType.field}.js, where nodeType is the type of node you want to create pages from, and field is the data field from that node type that you want to use in the URL for that page.
 Query variables let you pass in different data values to the same GraphQL query. They can be combined with field arguments to get back data only about a specific node.
 Query variables can only be used in page queries.
+
+Use the StaticImage component if your component always renders the same image (from a relative path or a remote URL).
+Use the GatsbyImage component if the image source changes for different instances of your component (like if it gets passed in as a prop).

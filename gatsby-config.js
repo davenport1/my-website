@@ -13,6 +13,7 @@ module.exports = {
     "gatsby-remark-autolink-headers",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
       options: {
