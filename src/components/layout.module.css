@@ -1,7 +1,16 @@
 .container {
-    margin: auto;
-    max-width: 500px;
+    display: flex;
     font-family: sans-serif;
+}
+
+.nav-container {
+    width: 200px; /* Set the width of the nav container */
+    padding: 20px; /* Add padding to separate from main content */
+    align-self: flex-start; /* Anchor to the left */
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
 }
 
 .heading {
@@ -9,22 +18,55 @@
 }
 
 .nav-links {
-    display: flex;
     list-style: none;
     padding-left: 0;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
 }
 
 .nav-link-item {
     padding-right: 2rem;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
 }
 
 .nav-link-text {
     color: black;
+    font-size: 1.5rem;
 }
 
 .site-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: gray;
     font-weight: 700;
     margin: 3rem 0;
+}
+
+.main-content {
+    flex: 1; /* Take up remaining space */
+    align-self: center; /* Anchor to the left */
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.intro-sentence {
+    color: darkslategray;
+}
+
+@media screen and (max-width: 768px) {
+    /* Media query for screens smaller than 768px (typically mobile devices) */
+    .container {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .nav-container {
+        width: 100%; /* Full width on small screens */
+        padding-right: 0; /* No padding on small screens */
+    }
 }

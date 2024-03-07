@@ -6,7 +6,10 @@ import {
     navLinks,
     navLinkItem,
     navLinkText,
-    siteTitle
+    siteTitle,
+    navContainer,
+    mainContent,
+    introSentence
 } from './layout.module.css';
 
 const Layout = ({ pageTitle, children }) => {
@@ -22,21 +25,27 @@ const Layout = ({ pageTitle, children }) => {
 
     return (
         <div className={container}>
-            <header className={siteTitle}>{data.site.siteMetadata.title}</header>
-            <nav>
-                <ul className={navLinks}>
-                    <li className={navLinkItem}>
-                        <Link to={"/"} className={navLinkText}>Home</Link>
-                    </li>
-                    <li className={navLinkItem}>
-                        <Link to={"/about"} className={navLinkText}>About</Link>
-                    </li>
-                    <li className={navLinkItem}>
-                        <Link to={"/blog"} className={navLinkText}>Blog</Link>
-                    </li>
-                </ul>
-            </nav>
-            <main>
+            <div className={navContainer}>
+                <header className={siteTitle}>Matthew Davenport</header>
+                <p className={introSentence}>Balancing a life between tech and getting goofy in the beautiful cascades.</p>
+                <nav>
+                    <ul className={navLinks}>
+                        <li className={navLinkItem}>
+                            <Link to={"/"} className={navLinkText}>Home</Link>
+                        </li>
+                        <li className={navLinkItem}>
+                            <Link to={"/about"} className={navLinkText}>About</Link>
+                        </li>
+                        <li className={navLinkItem}>
+                            <Link to={"/blog"} className={navLinkText}>Blog</Link>
+                        </li>
+                        <li className={navLinkItem}>
+                            <Link to={"/"} className={navLinkText}>Projects</Link>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <main className={mainContent}>
                 <h1 className={heading}>{pageTitle}</h1>
                 {children}
             </main>
@@ -44,4 +53,4 @@ const Layout = ({ pageTitle, children }) => {
     )
 }
 
-export  default Layout;
+export default Layout;

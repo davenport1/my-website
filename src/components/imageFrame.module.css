@@ -1,0 +1,16 @@
+.image-frame {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.image-frame img {
+    width: 100%;
+    height: auto;
+}
+
+.image-caption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #666;
+}
