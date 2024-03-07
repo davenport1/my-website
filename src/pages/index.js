@@ -1,8 +1,9 @@
 import * as React from 'react'
 import {Link} from 'gatsby';
 import Layout from '../components/layout';
-import {StaticImage} from "gatsby-plugin-image";
 import Seo from '../components/seo';
+import ImageFrame from "../components/imageFrame";
+import {StaticImage} from "gatsby-plugin-image";
 
 import {
     container,
@@ -10,7 +11,8 @@ import {
     descriptors,
     mainImage
 } from './index.module.css'
-import ImageFrame from "../components/imageFrame";
+
+import SouthSisterImage from '../images/south-sister.png';
 
 // Home page for the site
 const IndexPage = () => {
@@ -21,12 +23,11 @@ const IndexPage = () => {
                   <Link to={'/'}></Link>
                   Programmer | Splitboarder | Gamer | Guitarist
               </p>
-              <StaticImage src="../images/south-sister.png"
-                           alt="Matthew after descending the dead clark glacier on South Sister"
-                           className={mainImage}/>
-              <ImageFrame src={"../images/south-sister.png"}
-                          alt={"Matthew after descending the dead clark glacier on South Sister"}
-                          caption={"Descending the Clark Glacier on South Sister"}></ImageFrame>
+              <ImageFrame caption={"Descending the Clark Glacier on South Sister"}>
+                  <StaticImage src="../images/south-sister.png"
+                               alt="Matthew after descending the dead clark glacier on South Sister"
+                               className={mainImage}/>
+              </ImageFrame>
               <Link to={'/about'}>About Me</Link>
           </div>
       </Layout>

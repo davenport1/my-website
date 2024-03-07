@@ -4,20 +4,19 @@ import {
     imageFrame,
     imageCaption
 } from './imageFrame.module.css'
-import {StaticImage} from "gatsby-plugin-image";
+import {GatsbyImage} from "gatsby-plugin-image";
 
-const ImageFrame = ({ src, alt, caption }) => {
+const ImageFrame = ({ children, caption }) => {
     return (
-        <div className="image-frame">
-            <StaticImage src={src} alt={alt} />
-            {caption && <p className="image-caption">{caption}</p>}
+        <div className={imageFrame}>
+            {children}
+            {caption && <p className={imageCaption}>{caption}</p>}
         </div>
     );
 };
 
 ImageFrame.propTypes = {
-    src: PropTypes.string.isRequired,
-    alt: PropTypes.string.isRequired,
+    children: PropTypes.element.isRequired,
     caption: PropTypes.string,
 };
 
