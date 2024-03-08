@@ -14,7 +14,7 @@
 }
 
 .heading {
-    color: rebeccapurple;
+    color: slategray;
 }
 
 .nav-links {
@@ -40,7 +40,7 @@
 
 .site-title {
     font-size: 2.5rem;
-    color: gray;
+    color: slategray;
     font-weight: 700;
     margin: 3rem 0;
 }
@@ -57,6 +57,7 @@
 
 .intro-sentence {
     color: darkslategray;
+    font-family: "Open Sans";
 }
 
 @media screen and (max-width: 768px) {

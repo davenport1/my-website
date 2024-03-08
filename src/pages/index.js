@@ -9,7 +9,8 @@ import {
     container,
     title,
     descriptors,
-    mainImage
+    mainImage,
+    introSentence
 } from './index.module.css'
 
 import SouthSisterImage from '../images/south-sister.png';
@@ -19,6 +20,9 @@ const IndexPage = () => {
   return (
       <Layout pageTitle={"Welcome!"}>
           <div className={container}>
+              <p className={introSentence}>
+                  My place to keep track of adventures, personal lessons, and professional achievements.
+              </p>
               <p className={descriptors}>
                   <Link to={'/'}></Link>
                   Programmer | Splitboarder | Gamer | Guitarist
@@ -28,7 +32,7 @@ const IndexPage = () => {
                                alt="Matthew after descending the dead clark glacier on South Sister"
                                className={mainImage}/>
               </ImageFrame>
-              <Link to={'/about'}>About Me</Link>
+              <Link to={'/contact'}>Get In Touch!</Link>
           </div>
       </Layout>
   )

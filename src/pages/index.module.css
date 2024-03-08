@@ -6,8 +6,15 @@
 
 }
 
-.descriptors {
+.intro-sentence {
+    font-family: "Open Sans";
+    color: darkslategrey;
+}
 
+.descriptors {
+    font-family: "Open Sans";
+    color: darkslategray;
+    font-weight: 700;
 }
 
 .main-image {
